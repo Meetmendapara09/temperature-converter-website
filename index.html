@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap/dist/js/bootstrap.min.js"></script>
+    <style>
+      body {
+        font-family: 'Tangerine', serif;
+        font-size: 48px;
+      }
+    </style>
+
+    <title>Temperature Converter</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center mt-5">Temperature Converter</h1>
+        <div class="row justify-content-center mt-4">
+            <div class="col-lg-6 col-md-8 col-sm-10">
+                <div class="form-group">
+                    <input type="number" class="form-control" id="input" placeholder="Enter temperature" step="any">
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-5">
+                <select class="form-control" id="fromUnit">
+                    <option value="celsius">Celsius (°C)</option>
+                    <option value="fahrenheit">Fahrenheit (°F)</option>
+                    <option value="kelvin">Kelvin (K)</option>
+                </select>
+            </div>
+            <div class="col-lg-1 col-md-1 col-sm-1 align-self-center">
+                <span>to</span>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-5">
+                <select class="form-control" id="toUnit">
+                    <option value="celsius">Celsius (°C)</option>
+                    <option value="fahrenheit">Fahrenheit (°F)</option>
+                    <option value="kelvin">Kelvin (K)</option>
+                </select>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-2">
+                <button class="btn btn-primary btn-block" onclick="convertTemperature()">Convert</button>
+            </div>
+        </div>
+        <div class="row justify-content-center mt-3">
+            <div class="col-md-8">
+                <p class="result-text text-center" id="output"></p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
