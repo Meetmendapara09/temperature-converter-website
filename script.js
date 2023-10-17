@@ -3,7 +3,6 @@ function convertTemperature() {
     const fromUnit = document.getElementById("fromUnit").value;
     const toUnit = document.getElementById("toUnit").value;
     let result;
-
     if (fromUnit === "celsius" && toUnit === "fahrenheit") {
         result = (inputTemperature * 9/5) + 32;
     } else if (fromUnit === "fahrenheit" && toUnit === "celsius") {
@@ -17,12 +16,10 @@ function convertTemperature() {
     } else if (fromUnit === "kelvin" && toUnit === "fahrenheit") {
         result = (inputTemperature - 273.15) * 9/5 + 32;
     } else {
-        result = inputTemperature; // Same unit conversion (e.g., Celsius to Celsius)
+        result = inputTemperature; 
     }
-
     const fromUnitText = document.getElementById("fromUnit").options[document.getElementById("fromUnit").selectedIndex].text;
     const toUnitText = document.getElementById("toUnit").options[document.getElementById("toUnit").selectedIndex].text;
-
     document.getElementById("output").textContent = `Conversion: ${inputTemperature} ${fromUnitText} to ${result.toFixed(2)} ${toUnitText}`;
 }
 window.addEventListener("load", function () {
