@@ -1,4 +1,3 @@
-
 body {
     font-family: Times New Roman, Times New Roman;
     background-image: url('background.jpg');
@@ -7,9 +6,8 @@ body {
     background-attachment: fixed;
     margin: 0;
     padding: 0;
-    color: white; /* Set text color to be visible on the background image */
+    color: white; 
 }
-
 .container {
     text-align: center;
     background-color: #ffffff;
@@ -18,27 +16,22 @@ body {
     padding: 20px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
-
 h1 {
     font-size: 24px;
 }
-
 .converter {
     margin-bottom: 20px;
 }
-
 input[type="number"] {
     width: 100%;
     padding: 10px;
     margin: 10px 0;
 }
-
 select {
     width: 100%;
     padding: 10px;
     margin: 10px 0;
 }
-
 button {
     padding: 10px 20px;
     background-color: #007bff;
@@ -46,11 +39,9 @@ button {
     border: none;
     cursor: pointer;
 }
-
 button:hover {
     background-color: #0056b3;
 }
-
 .result {
     font-size: 18px;
 }
