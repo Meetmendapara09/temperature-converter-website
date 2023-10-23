@@ -6,7 +6,6 @@ body {
     background-attachment: fixed;
     margin: 0;
     padding: 0;
-    color: white; 
     background : linear-gradient(90deg ,red, yellow ,blue , green , pink , purple , rgba(90,23,45));
 }
 .container {
