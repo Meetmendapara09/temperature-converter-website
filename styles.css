@@ -7,6 +7,7 @@ body {
     margin: 0;
     padding: 0;
     color: white; 
+    background : linear-gradient(9deg ,red, yellow ,blue , green , pink , purple , rgba(90,23,45));
 }
 .container {
     text-align: center;
