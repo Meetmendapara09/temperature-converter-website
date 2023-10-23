@@ -5,7 +5,7 @@ body {
     background-attachment: fixed;
     margin: 0;
     padding: 0;
-    background : linear-gradient(90deg ,red, yellow ,blue , green , pink , purple , rgba(90,23,45));
+    background : linear-gradient(90deg ,red, yellow ,blue , green , pink , purple , #5AB834);
 }
 .container {
     text-align: center;
